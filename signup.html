@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediQueue - Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-heartbeat"></i> MediQueue
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="appointment.html">Book Appointment</a></li>
+                    <li><a href="token.html">Track Token</a></li>
+                    <li><a href="doctor.html">Doctors</a></li>
+                    <li><a href="Contact-Us.html">Contact Us</a></li>
+                </ul>
+                
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="signup-hero">
+        <div class="container">
+            <h1>Join MediQueue Today</h1>
+            <p>Create an account to manage appointments and access personalized healthcare services</p>
+        </div>
+    </section>
+
+    <!-- Signup Section -->
+    <section class="section" id="signup">
+        <div class="container">
+            <div class="section-title">
+                <h2>Create Your Account</h2>
+                <p>Join thousands of patients managing their healthcare with MediQueue</p>
+            </div>
+            
+            <div class="card">
+                <form id="signup-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" class="form-control" placeholder="Enter your first name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" class="form-control" placeholder="Enter your last name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" class="form-control" placeholder="Enter your email address" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" class="form-control" placeholder="Create a password" required>
+                        <small class="form-text">Password must be at least 8 characters with a number and special character</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" class="form-control" placeholder="Confirm your password" required>
+                    </div>
+                    
+                    <div class="form-group terms">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">I agree to the <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a></label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+                    
+                    <div class="login-divider">
+                        <span>OR</span>
+                    </div>
+                    
+                    <div class="social-login">
+                        <button type="button" class="btn btn-google">
+                            <i class="fab fa-google"></i> Sign up with Google
+                        </button>
+                        <button type="button" class="btn btn-facebook">
+                            <i class="fab fa-facebook-f"></i> Sign up with Facebook
+                        </button>
+                    </div>
+                    
+                    <div class="login-link">
+                        <p>Already have an account? <a href="login.html">Sign in</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>MediQueue</h3>
+                    <p>Smart hospital appointment system powered by AI to optimize doctor availability and patient experience.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="appointment.html">Book Appointment</a></li>
+                        <li><a href="token.html">Track Token</a></li>
+                        <li><a href="doctor.html">Doctors</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@mediqueue.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Hospital Street, Medical City</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 MediQueue. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

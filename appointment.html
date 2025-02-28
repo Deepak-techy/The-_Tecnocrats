@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediQueue - Appointment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+ <!-- Header Section -->
+ <header>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <i class="fas fa-heartbeat"></i> MediQueue
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="appointment.html">Book Appointment</a></li>
+                <li><a href="token.html">Track Token</a></li>
+                <li><a href="doctor.html">Doctors</a></li>
+                <li><a href="Contact-Us.html">Contact Us</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="register.html" class="btn btn-primary">Register</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Mediqueue Appointment System</h1>
+            <p>Seamless Appointment Booking – Connecting You with the Right Doctor at the Right Time!</p>
+        </div>
+    </section>
+
+    <!-- Browse by Specialties Section -->
+    <section class="specialties-section">
+        <div class="container">
+            <h2>Browse by Specialties</h2>
+            <p>Select a medical specialty to find the best doctor for your needs.</p>
+            <div class="specialties-grid">
+                <a href="./speciality/general.html" class="specialty">
+                    <img src="icons/general.webp" alt="General Physician">
+                    <p>General Physician</p>
+                </a>
+                <a href="dermatology.html" class="specialty">
+                    <img src="icons/dermatology.webp" alt="Dermatology">
+                    <p>Dermatology</p>
+                </a>
+                <a href="gynecology.html" class="specialty">
+                    <img src="icons/gynecology.webp" alt="Obstetrics & Gynaecology">
+                    <p>Obstetrics & Gynaecology</p>
+                </a>
+                <a href="orthopaedics.html" class="specialty">
+                    <img src="icons/ortho.webp" alt="Orthopaedics">
+                    <p>Orthopaedics</p>
+                </a>
+                <a href="ent.html" class="specialty">
+                    <img src="icons/ent.webp" alt="ENT">
+                    <p>ENT</p>
+                </a>
+                <a href="neurology.html" class="specialty">
+                    <img src="icons/neurology.webp" alt="Neurology">
+                    <p>Neurology</p>
+                </a>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Doctor Search Section -->
+<section class="d-section" id="find-doctor">
+    <div class="d-container">
+        <div class="d-section-title">
+            <h2>Find a Doctor</h2>
+            <p>Search for specialists available in your area</p>
+        </div>
+        
+        <div class="d-card">
+            <form id="doctor-search-form">
+                <div class="form-group">
+                    <label for="patient-location">Your Location</label>
+                    <select id="patient-location" class="d-form-control" required>
+                        <option value="" disabled selected>Select your city</option>
+                        <option value="Guwahati">Guwahati</option>
+                        <option value="Jorhat">Jorhat</option>
+                        <option value="Dibrugarh">Dibrugarh</option>
+                        <option value="Tezpur">Tezpur</option>
+                        <option value="Silchar">Silchar</option>
+                        <option value="Goalpara">Goalpara</option>
+                    </select>
+                </div>
+                
+                <div class="d-form-group">
+                    <label for="medical-department">Medical Department</label>
+                    <select id="medical-department" class="d-form-control" required>
+                        <option value="" disabled selected>Select department</option>
+                        <option value="general">General Physician</option>
+                        <option value="dermatology">Dermatology</option>
+                        <option value="gynecology">Obstetrics & Gynaecology</option>
+                        <option value="orthopaedics">Orthopaedics</option>
+                        <option value="ent">ENT</option>
+                        <option value="neurology">Neurology</option>
+                        <option value="cardiology">Cardiology</option>
+                        <option value="pediatrics">Pediatrics</option>
+                        <option value="psychology">Psychology</option>
+                        <option value="dental">Dental</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" id="open-general">
+                    <i class="fas fa-search"></i> Search Available Doctors
+                </button>
+
+                <script>
+                    document.getElementById("open-general").addEventListener("click", function() {
+                        window.location.href = "speciality/general.html";
+                    });
+                </script>
+                
+            </form>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>MediQueue</h3>
+                    <p>Smart hospital appointment system powered by AI to optimize doctor availability and patient experience.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="appointment.html">Book Appointment</a></li>
+                        <li><a href="token.html">Track Token</a></li>
+                        <li><a href="doctor.html">Doctors</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@mediqueue.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Hospital Street, Medical City</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 MediQueue. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        
+    </script>
+</body>
+</html>

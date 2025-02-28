@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediQueue - Appointment</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+ <!-- Header Section -->
+ <header>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <i class="fas fa-heartbeat"></i> MediQueue
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html" class="active">Home</a></li>
+                <li><a href="../appointment.html">Book Appointment</a></li>
+                <li><a href="../token.html">Track Token</a></li>
+                <li><a href="../doctor.html">Doctors</a></li>
+                <li><a href="../Contact-Us.html">Contact Us</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="register.html" class="btn btn-primary">Register</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>MediQueue Appointment System</h1>
+            <p>Seamless Appointment Booking – Connecting You with the Right Doctor at the Right Time!</p>
+        </div>
+    </section>
+
+    <!-- Doctor Listing & Filters Section -->
+    <div class="container doctor-section">
+        <aside class="filters">
+            <h2>Filters <span class="clear">Clear All</span></h2>
+            <button class="btn-location">Show Doctors Near Me</button>
+            
+            <h3>Mode of Consult</h3>
+            <label><input type="checkbox" checked> Hospital Visit</label>
+            <label><input type="checkbox" checked> Online Consult</label>
+
+            <h3>Experience (In Years)</h3>
+            <label><input type="checkbox"> 0-5</label>
+            <label><input type="checkbox"> 6-10</label>
+            <label><input type="checkbox"> 11-16</label>
+
+            <h3>Fees (In Rupees)</h3>
+            <label><input type="checkbox"> 100-500</label>
+            <label><input type="checkbox"> 500-1000</label>
+            <label><input type="checkbox"> 1000+</label>
+
+            <h3>Language</h3>
+            <label><input type="checkbox"> English</label>
+        </aside>
+
+        <main class="doctor-list">
+            <div class="header">
+                <h1>Consult General Physicians Online - Internal Medicine Specialists</h1>
+                <p>(766 doctors)</p>
+                <select class="sort">
+                    <option>Relevance</option>
+                    <option>Experience</option>
+                    <option>Fees: Low to High</option>
+                    <option>Fees: High to Low</option>
+                </select>
+            </div>
+
+            <div class="doctor-card">
+                <img src="../images/doctor2.jpg" alt="Dr. Kolli Mahesh">
+                <div class="doctor-info">
+                    <h2>Dr. Kolli Mahesh</h2>
+                    <p class="specialty-cd">General Practitioner</p>
+                    <p class="experience"><span>4 YEARS</span> • MD (PHYSICIAN)</p>
+                    <p class="location">Chennai - Apollo 24|7 Virtual Clinic</p>
+                    <p class="rating"><span>88%</span> • 50+ Recommendations</p>
+                </div>
+                <div class="consult">
+                    <p class="fees" style="margin-left: 400px;">₹349</p>
+                    <div class="time-dropdown">
+                        <label for="time-slots">Choose Time Slot</label>
+                    <select id="time-slots">
+                        <optgroup label="Morning Slots">
+                            <option value="9:00 am">9:00 am</option>
+                            <option value="9:15 am">9:15 am</option>
+                            <option value="9:30 am">9:30 am</option>
+                            <option value="9:45 am">9:45 am</option>
+                            <option value="10:00 am">10:00 am</option>
+                            <option value="10:15 am">10:15 am</option>
+                            <option value="10:30 am">10:30 am</option>
+                            <option value="10:45 am">10:45 am</option>
+                            <option value="11:00 am">11:00 am</option>
+                            <option value="11:15 am">11:15 am</option>
+                            <option value="11:30 am">11:30 am</option>
+                            <option value="11:45 am">11:45 am</option>
+                            <option value="12:00 pm">12:00 pm</option>
+                            <option value="12:15 pm">12:15 pm</option>
+                            <option value="12:30 pm">12:30 pm</option>
+                            <option value="12:45 pm">12:45 pm</option>
+                        </optgroup>
+                        <optgroup label="Evening Slots">
+                            <option value="4:00 pm">4:00 pm</option>
+                            <option value="4:15 pm">4:15 pm</option>
+                            <option value="4:30 pm">4:30 pm</option>
+                            <option value="4:45 pm">4:45 pm</option>
+                            <option value="5:00 pm">5:00 pm</option>
+                            <option value="5:15 pm">5:15 pm</option>
+                            <option value="5:30 pm">5:30 pm</option>
+                        </optgroup>
+                    </select>
+                    </div>
+                    <button class="consult-btn" id="booked-appointment1">Book Appointment</button>
+                </div>
+            </div>
+
+            <div class="doctor-card">
+                <img src="../images/doctor2.jpg" alt="Dr. Anshul Maheshwari">
+                <div class="doctor-info">
+                    <h2>Dr. Anshul Maheshwari</h2>  
+                    <p class="specialty-cd">General Practitioner</p>
+                    <p class="experience"><span>5 YEARS</span> • MBBS</p>
+                    <p class="location">Lucknow - Apollo 24|7 Virtual Clinic</p>
+                    <p class="rating"><span>90%</span> • 70+ Recommendations</p>
+                </div>
+                <div class="consult">
+                    <p class="fees" style="margin-left: 400px;">₹349</p>
+                    <div class="time-dropdown">
+                        <label for="time-slots">Choose Time Slot</label>
+                    <select id="time-slots">
+                        <optgroup label="Morning Slots">
+                            <option value="9:00 am">9:00 am</option>
+                            <option value="9:15 am">9:15 am</option>
+                            <option value="9:30 am">9:30 am</option>
+                            <option value="9:45 am">9:45 am</option>
+                            <option value="10:00 am">10:00 am</option>
+                            <option value="10:15 am">10:15 am</option>
+                            <option value="10:30 am">10:30 am</option>
+                            <option value="10:45 am">10:45 am</option>
+                            <option value="11:00 am">11:00 am</option>
+                            <option value="11:15 am">11:15 am</option>
+                            <option value="11:30 am">11:30 am</option>
+                            <option value="11:45 am">11:45 am</option>
+                            <option value="12:00 pm">12:00 pm</option>
+                            <option value="12:15 pm">12:15 pm</option>
+                            <option value="12:30 pm">12:30 pm</option>
+                            <option value="12:45 pm">12:45 pm</option>
+                        </optgroup>
+                        <optgroup label="Evening Slots">
+                            <option value="4:00 pm">4:00 pm</option>
+                            <option value="4:15 pm">4:15 pm</option>
+                            <option value="4:30 pm">4:30 pm</option>
+                            <option value="4:45 pm">4:45 pm</option>
+                            <option value="5:00 pm">5:00 pm</option>
+                            <option value="5:15 pm">5:15 pm</option>
+                            <option value="5:30 pm">5:30 pm</option>
+                        </optgroup>
+                    </select>
+                    </div>
+
+                    <button class="consult-btn" id="booked-appointment2">Book Appointment</button>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>MediQueue</h3>
+                    <p>Smart hospital appointment system powered by AI to optimize doctor availability and patient experience.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="appointment.html">Book Appointment</a></li>
+                        <li><a href="token.html">Track Token</a></li>
+                        <li><a href="doctor.html">Doctors</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@mediqueue.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Hospital Street, Medical City</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 MediQueue. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        document.getElementById("booked-appointment1").addEventListener("click", function() {
+            alert("Appointment Booked")
+        });
+
+        document.getElementById("booked-appointment2").addEventListener("click", function() {
+            alert("Appointment Booked")
+        });
+    </script>
+</body>
+</html>

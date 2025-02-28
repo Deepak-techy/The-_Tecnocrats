@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediQueue - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-heartbeat"></i> MediQueue
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="appointment.html">Book Appointment</a></li>
+                    <li><a href="token.html">Track Token</a></li>
+                    <li><a href="doctor.html">Doctors</a></li>
+                    <li><a href="Contact-Us.html">Contact Us</a></li>
+                </ul>
+                
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="login-hero">
+        <div class="container">
+            <h1>Welcome Back to MediQueue</h1>
+            <p>Access your account to manage appointments and view medical information</p>
+        </div>
+    </section>
+
+    <!-- Login Section -->
+    <section class="section" id="login">
+        <div class="container">
+            <div class="section-title">
+                <h2>Account Login</h2>
+                <p>Sign in to access your MediQueue dashboard</p>
+            </div>
+            
+            <div class="card">
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="user-email">Email Address</label>
+                        <input type="email" id="user-email" class="form-control" placeholder="Enter your email address" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="user-password">Password</label>
+                        <input type="password" id="user-password" class="form-control" placeholder="Enter your password" required>
+                        <div class="password-options">
+                            <div class="remember-me">
+                                <input type="checkbox" id="remember-me">
+                                <label for="remember-me">Remember me</label>
+                            </div>
+                            <a href="forgot-password.html" class="forgot-password">Forgot password?</a>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                    
+                    <div class="login-divider">
+                        <span>OR</span>
+                    </div>
+                    
+                    <div class="social-login">
+                        <button type="button" class="btn btn-google">
+                            <i class="fab fa-google"></i> Sign in with Google
+                        </button>
+                    </div>
+                    
+                    <div class="signup-link">
+                        <p>Don't have an account? <a href="signup.html">Create an account</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>MediQueue</h3>
+                    <p>Smart hospital appointment system powered by AI to optimize doctor availability and patient experience.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="appointment.html">Book Appointment</a></li>
+                        <li><a href="token.html">Track Token</a></li>
+                        <li><a href="doctor.html">Doctors</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@mediqueue.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Hospital Street, Medical City</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 MediQueue. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
